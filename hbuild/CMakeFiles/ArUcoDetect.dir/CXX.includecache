@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/oliver/MySoftware/arucodetect/src/Modules/ArUcoDetect/ArUcoDetect.C
+jevois/Core/Module.H
+-
+jevois/Image/RawImageOps.H
+-
+jevois/Debug/Timer.H
+-
+jevoisbase/Components/ArUco/ArUco.H
+-
+opencv2/core/core.hpp
+-
+

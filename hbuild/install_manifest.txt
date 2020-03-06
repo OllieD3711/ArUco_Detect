@@ -1,0 +1,6 @@
+/jevois/modules/ARCC/ArUcoDetect/icon.png
+/jevois/modules/ARCC/ArUcoDetect/ArUcoDetect.C
+/jevois/modules/ARCC/ArUcoDetect/screenshot1.png
+/jevois/modules/ARCC/ArUcoDetect/postinstall
+/jevois/modules/ARCC/ArUcoDetect/ArUcoDetect.so
+/jevois/share/README.txt
