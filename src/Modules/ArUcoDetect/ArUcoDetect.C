@@ -292,26 +292,28 @@ class ArUcoDetect : public jevois::StdModule
           if (n) { cy /= n; cz /= n; area = abs(area/2.0); }
 
           // Pack message
-          ArUco_msg msg;
-          msg.py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg.pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg.time      = inimg.time_stmp.tv_sec + inimg.time_stmp.tv_usec/1000000.;
-          msg.psqrtA    = sqrt(area);
+          struct ArUco_msg msg_instance;
+	  struct ArUco_msg *msg = &msg_instance;
+	  //struct ArUco_msg *msg = &msg_instance;
+          msg->py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          msg->pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          msg->time      = 0;
+          msg->psqrtA    = sqrt(area);
 
           // Encode message
-          msg.ArUco_header.messageSize = sizeof(struct ArUco_msg);
-          int byteCount         = msg.ArUco_header.messageSize;
+          msg->ArUco_header.messageSize = sizeof(struct ArUco_msg);
+          int byteCount         = msg->ArUco_header.messageSize;
           int headerSize        = sizeof(struct msg_header);
           int index             = headerSize;
 
 	  /* csum is the checksum of just the message content (ignoring the header) */
-          unsigned int csum     = calculateCheckSum((unsigned char *)&msg[sizeof(struct msg_header)], (int)(sizeof(struct ArUco_msg) - sizeof(struct msg_header)));
+          unsigned int csum     = calculateCheckSum((unsigned char *)(&msg[(int)sizeof(struct msg_header)]), (int)(sizeof(struct ArUco_msg) - sizeof(struct msg_header)));
           
 	  /* hcsum is the checksum of just the header (ignoring the content) -- I don't think GUST checks this... */
 	  unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, sizeof(struct msg_header));
-          
-	  msg.ArUco_header.csum = csum;
-          msg.ArUco_header.hcsum= hcsum;
+         
+	  msg->ArUco_header.csum = csum;
+          msg->ArUco_header.hcsum= hcsum;
           std::string ArUco_string = encodeSerialMsg((char *)&msg, byteCount);
           jevois::Module::sendSerial(ArUco_string);
       }
@@ -390,26 +392,27 @@ class ArUcoDetect : public jevois::StdModule
           if (n) { cy /= n; cz /= n; area = abs(area/2.0); }
 
           // Pack message
-          ArUco_msg msg;
-          msg.py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg.pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg.time      = inimg.time_stmp.tv_sec + inimg.time_stmp.tv_usec/1000000.;
-          msg.psqrtA    = sqrt(area);
+          struct ArUco_msg msg_instance;
+	  struct ArUco_msg *msg = &msg_instance;
+          msg->py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          msg->pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          msg->time      = 0;
+          msg->psqrtA    = sqrt(area);
 
           // Encode message
-          msg.ArUco_header.messageSize = sizeof(struct ArUco_msg);
-          int byteCount         = msg.ArUco_header.messageSize;
+          msg->ArUco_header.messageSize = sizeof(struct ArUco_msg);
+          int byteCount         = msg->ArUco_header.messageSize;
           int headerSize        = sizeof(struct msg_header);
           int index             = headerSize;
 
 	  /* csum is the checksum of just the message content (ignoring the header) */
-          unsigned int csum     = calculateCheckSum((unsigned char *)&msg[sizeof(struct msg_header)], (int)(sizeof(struct ArUco_msg) - sizeof(struct msg_header)));
+          unsigned int csum     = calculateCheckSum((unsigned char *)(&msg[(int)sizeof(struct msg_header)]), (int)(sizeof(struct ArUco_msg) - sizeof(struct msg_header)));
           
 	  /* hcsum is the checksum of just the header (ignoring the content) -- I don't think GUST checks this... */
 	  unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, sizeof(struct msg_header));
 	  
-          msg.ArUco_header.csum = csum;
-          msg.ArUco_header.hcsum= hcsum;
+          msg->ArUco_header.csum = csum;
+          msg->ArUco_header.hcsum= hcsum;
           std::string ArUco_string = encodeSerialMsg((char *)&msg, byteCount);
           jevois::Module::sendSerial(ArUco_string);
       }
