@@ -304,13 +304,13 @@ class ArUcoDetect : public jevois::StdModule
           int headerSize        = sizeof(struct msg_header);
           int index             = headerSize;
 
-		  /* csum is the checksum of just the message content (ignoring the header) */
+	  /* csum is the checksum of just the message content (ignoring the header) */
           unsigned int csum     = calculateCheckSum((unsigned char *)&msg[sizeof(struct msg_header)], (int)(sizeof(struct ArUco_msg) - sizeof(struct msg_header)));
           
-		  /* hcsum is the checksum of just the header (ignoring the content) -- I don't think GUST checks this... */
-		  unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, sizeof(struct msg_header));
+	  /* hcsum is the checksum of just the header (ignoring the content) -- I don't think GUST checks this... */
+	  unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, sizeof(struct msg_header));
           
-		  msg.ArUco_header.csum = csum;
+	  msg.ArUco_header.csum = csum;
           msg.ArUco_header.hcsum= hcsum;
           std::string ArUco_string = encodeSerialMsg((char *)&msg, byteCount);
           jevois::Module::sendSerial(ArUco_string);
@@ -401,8 +401,13 @@ class ArUcoDetect : public jevois::StdModule
           int byteCount         = msg.ArUco_header.messageSize;
           int headerSize        = sizeof(struct msg_header);
           int index             = headerSize;
-          unsigned int csum     = calculateCheckSum((unsigned char *)&msg, byteCount, index);
-          unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, headerSize - sizeof(int)*2, 0);
+
+	  /* csum is the checksum of just the message content (ignoring the header) */
+          unsigned int csum     = calculateCheckSum((unsigned char *)&msg[sizeof(struct msg_header)], (int)(sizeof(struct ArUco_msg) - sizeof(struct msg_header)));
+          
+	  /* hcsum is the checksum of just the header (ignoring the content) -- I don't think GUST checks this... */
+	  unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, sizeof(struct msg_header));
+	  
           msg.ArUco_header.csum = csum;
           msg.ArUco_header.hcsum= hcsum;
           std::string ArUco_string = encodeSerialMsg((char *)&msg, byteCount);
