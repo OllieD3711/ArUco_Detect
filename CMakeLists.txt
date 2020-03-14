@@ -36,10 +36,10 @@ jevois_project_set_flags()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 ## If your module will use components provided by jevoisbase, uncomment the lines below:
-#if (JEVOIS_PLATFORM)
-#  link_directories("/var/lib/jevois-microsd/lib/JeVois") # find libjevoisbase.so for platform
-#endif (JEVOIS_PLATFORM)
-#include_directories("/var/lib/jevois-build/usr/include") # find jevoisbase includes
+if (JEVOIS_PLATFORM)
+  link_directories("/var/lib/jevois-microsd/lib/JeVois") # find libjevoisbase.so for platform
+endif (JEVOIS_PLATFORM)
+include_directories("/var/lib/jevois-build/usr/include") # find jevoisbase includes
 
 ## If you also want to use some of the jevoisbase contribs, just add the appropriate include paths here.  You will also
 ## need to set JEVOIS_SRC_ROOT environment variable in your shell to the parent of the jevoisbase directory, e.g., type:
@@ -56,7 +56,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 jevois_setup_modules(src/Modules "")
 
 ## Add any link libraries for each module. Add 'jevoisbase' here if you want to link against it:
-target_link_libraries(ArUcoDetect ${JEVOIS_OPENCV_LIBS} opencv_imgproc opencv_core)
+target_link_libraries(ArUcoDetect ${JEVOIS_OPENCV_LIBS} jevoisbase opencv_imgproc opencv_core)
 
 ## Install any shared resources (cascade classifiers, neural network weights, etc) in the share/ sub-directory:
 install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/share"

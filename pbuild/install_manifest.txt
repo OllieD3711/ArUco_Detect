@@ -1,0 +1,8 @@
+/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.C.autosave
+/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/icon.png
+/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.C
+/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/screenshot1.png
+/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/postinstall
+/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/params.cfg
+/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so
+/home/oliver/MySoftware/arucodetect/jvpkg/share/README.txt
