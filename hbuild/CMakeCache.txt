@@ -15,7 +15,7 @@
 ########################
 
 //Dependencies for the target
-ArUcoDetect_LIB_DEPENDS:STATIC=general;jevois;general;-L/usr/share/jevois-opencv-4.1.1/lib -lopencv_core -lopencv_imgproc -lopencv_features2d -lopencv_flann -lopencv_ml -lopencv_objdetect -lopencv_imgcodecs -lopencv_tracking -lopencv_video -lopencv_videoio -lopencv_highgui;general;opencv_imgproc;general;opencv_core;
+ArUcoDetect_LIB_DEPENDS:STATIC=general;jevois;general;-L/usr/share/jevois-opencv-4.1.1/lib -lopencv_core -lopencv_imgproc -lopencv_features2d -lopencv_flann -lopencv_ml -lopencv_objdetect -lopencv_imgcodecs -lopencv_tracking -lopencv_video -lopencv_videoio -lopencv_highgui;general;jevoisbase;general;opencv_imgproc;general;opencv_core;
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar

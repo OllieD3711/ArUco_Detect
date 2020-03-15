@@ -3,3 +3,35 @@
 
 CMakeFiles/ArUcoDetect.dir/src/Modules/ArUcoDetect/ArUcoDetect.C.o
  /home/oliver/MySoftware/arucodetect/src/Modules/ArUcoDetect/ArUcoDetect.C
+ /var/lib/jevois-build/usr/include/jevois/Component/Component.H
+ /var/lib/jevois-build/usr/include/jevois/Component/Parameter.H
+ /var/lib/jevois-build/usr/include/jevois/Component/ParameterDef.H
+ /var/lib/jevois-build/usr/include/jevois/Component/ParameterRegistry.H
+ /var/lib/jevois-build/usr/include/jevois/Component/ParameterStringConversion.H
+ /var/lib/jevois-build/usr/include/jevois/Component/ValidValuesSpec.H
+ /var/lib/jevois-build/usr/include/jevois/Component/details/ComponentImpl.H
+ /var/lib/jevois-build/usr/include/jevois/Component/details/ParameterDefImpl.H
+ /var/lib/jevois-build/usr/include/jevois/Component/details/ParameterHelpers.H
+ /var/lib/jevois-build/usr/include/jevois/Component/details/ParameterImpl.H
+ /var/lib/jevois-build/usr/include/jevois/Component/details/ParameterStringConversionImpl.H
+ /var/lib/jevois-build/usr/include/jevois/Component/details/ValidValuesSpecImpl.H
+ /var/lib/jevois-build/usr/include/jevois/Core/Module.H
+ /var/lib/jevois-build/usr/include/jevois/Core/UserInterface.H
+ /var/lib/jevois-build/usr/include/jevois/Core/VideoBuf.H
+ /var/lib/jevois-build/usr/include/jevois/Debug/Log.H
+ /var/lib/jevois-build/usr/include/jevois/Debug/Timer.H
+ /var/lib/jevois-build/usr/include/jevois/Image/RawImage.H
+ /var/lib/jevois-build/usr/include/jevois/Image/RawImageOps.H
+ /var/lib/jevois-build/usr/include/jevois/Image/details/RawImageImpl.H
+ /var/lib/jevois-build/usr/include/jevois/Types/Enum.H
+ /var/lib/jevois-build/usr/include/jevois/Types/ObjReco.H
+ /var/lib/jevois-build/usr/include/jevois/Types/Range.H
+ /var/lib/jevois-build/usr/include/jevois/Types/StepRange.H
+ /var/lib/jevois-build/usr/include/jevois/Types/details/EnumImpl.H
+ /var/lib/jevois-build/usr/include/jevois/Types/details/RangeImpl.H
+ /var/lib/jevois-build/usr/include/jevois/Types/details/StepRangeImpl.H
+ /var/lib/jevois-build/usr/include/jevois/Util/Demangle.H
+ /var/lib/jevois-build/usr/include/jevois/Util/Utils.H
+ /var/lib/jevois-build/usr/include/jevois/Util/details/DemangleImpl.H
+ /var/lib/jevois-build/usr/include/jevois/Util/details/UtilsImpl.H
+ /var/lib/jevois-build/usr/include/jevoisbase/Components/ArUco/ArUco.H

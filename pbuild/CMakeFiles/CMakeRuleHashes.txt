@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+1400771a5a4b1cd07cbc3e4d36137df0 ../src/Modules/ArUcoDetect/modinfo.yaml
+1cb63f1025d7f7050ef847d910084aa6 CMakeFiles/jvpkg
+91ea6229ddc5b395789bc2d759fb38b2 CMakeFiles/modinfo_ArUcoDetect
