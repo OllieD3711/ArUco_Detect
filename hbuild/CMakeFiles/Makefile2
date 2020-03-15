@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oliver/MySoftware/arucodetect
+CMAKE_SOURCE_DIR = /home/jake/Documents/ArUco_Detect
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oliver/MySoftware/arucodetect/hbuild
+CMAKE_BINARY_DIR = /home/jake/Documents/ArUco_Detect/hbuild
 
 #=============================================================================
 # Target rules for target CMakeFiles/ArUcoDetect.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/oliver/MySoftware/arucodetect/hbuild
 CMakeFiles/ArUcoDetect.dir/all: CMakeFiles/modinfo_ArUcoDetect.dir/all
 	$(MAKE) -f CMakeFiles/ArUcoDetect.dir/build.make CMakeFiles/ArUcoDetect.dir/depend
 	$(MAKE) -f CMakeFiles/ArUcoDetect.dir/build.make CMakeFiles/ArUcoDetect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oliver/MySoftware/arucodetect/hbuild/CMakeFiles --progress-num=1,2 "Built target ArUcoDetect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jake/Documents/ArUco_Detect/hbuild/CMakeFiles --progress-num=1,2 "Built target ArUcoDetect"
 .PHONY : CMakeFiles/ArUcoDetect.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/ArUcoDetect.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ArUcoDetect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/MySoftware/arucodetect/hbuild/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jake/Documents/ArUco_Detect/hbuild/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ArUcoDetect.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/MySoftware/arucodetect/hbuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jake/Documents/ArUco_Detect/hbuild/CMakeFiles 0
 .PHONY : CMakeFiles/ArUcoDetect.dir/rule
 
 # Convenience name for target.
@@ -103,14 +103,14 @@ clean: CMakeFiles/ArUcoDetect.dir/clean
 CMakeFiles/jvpkg.dir/all:
 	$(MAKE) -f CMakeFiles/jvpkg.dir/build.make CMakeFiles/jvpkg.dir/depend
 	$(MAKE) -f CMakeFiles/jvpkg.dir/build.make CMakeFiles/jvpkg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oliver/MySoftware/arucodetect/hbuild/CMakeFiles --progress-num= "Built target jvpkg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jake/Documents/ArUco_Detect/hbuild/CMakeFiles --progress-num= "Built target jvpkg"
 .PHONY : CMakeFiles/jvpkg.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/jvpkg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/MySoftware/arucodetect/hbuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jake/Documents/ArUco_Detect/hbuild/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/jvpkg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/MySoftware/arucodetect/hbuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jake/Documents/ArUco_Detect/hbuild/CMakeFiles 0
 .PHONY : CMakeFiles/jvpkg.dir/rule
 
 # Convenience name for target.
@@ -135,14 +135,14 @@ clean: CMakeFiles/jvpkg.dir/clean
 CMakeFiles/modinfo_ArUcoDetect.dir/all:
 	$(MAKE) -f CMakeFiles/modinfo_ArUcoDetect.dir/build.make CMakeFiles/modinfo_ArUcoDetect.dir/depend
 	$(MAKE) -f CMakeFiles/modinfo_ArUcoDetect.dir/build.make CMakeFiles/modinfo_ArUcoDetect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/oliver/MySoftware/arucodetect/hbuild/CMakeFiles --progress-num=3 "Built target modinfo_ArUcoDetect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jake/Documents/ArUco_Detect/hbuild/CMakeFiles --progress-num=3 "Built target modinfo_ArUcoDetect"
 .PHONY : CMakeFiles/modinfo_ArUcoDetect.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/modinfo_ArUcoDetect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/MySoftware/arucodetect/hbuild/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jake/Documents/ArUco_Detect/hbuild/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/modinfo_ArUcoDetect.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oliver/MySoftware/arucodetect/hbuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jake/Documents/ArUco_Detect/hbuild/CMakeFiles 0
 .PHONY : CMakeFiles/modinfo_ArUcoDetect.dir/rule
 
 # Convenience name for target.

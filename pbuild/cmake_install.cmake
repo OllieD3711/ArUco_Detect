@@ -1,4 +1,4 @@
-# Install script for directory: /home/oliver/MySoftware/arucodetect
+# Install script for directory: /home/jake/Documents/ArUco_Detect
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,54 +39,54 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect")
+   "/home/jake/Documents/ArUco_Detect/jvpkg/modules/ARCC/ArUcoDetect")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC" TYPE DIRECTORY FILES "/home/oliver/MySoftware/arucodetect/src/Modules/ArUcoDetect" REGEX "/modinfo\\.yaml$" EXCLUDE REGEX "/[^/]*\\~$" EXCLUDE REGEX "/[^/]*ubyte$" EXCLUDE REGEX "/[^/]*\\.bin$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+file(INSTALL DESTINATION "/home/jake/Documents/ArUco_Detect/jvpkg/modules/ARCC" TYPE DIRECTORY FILES "/home/jake/Documents/ArUco_Detect/src/Modules/ArUcoDetect" REGEX "/modinfo\\.yaml$" EXCLUDE REGEX "/[^/]*\\~$" EXCLUDE REGEX "/[^/]*ubyte$" EXCLUDE REGEX "/[^/]*\\.bin$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so")
+  if(EXISTS "$ENV{DESTDIR}/home/jake/Documents/ArUco_Detect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jake/Documents/ArUco_Detect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so"
+         FILE "$ENV{DESTDIR}/home/jake/Documents/ArUco_Detect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so")
+   "/home/jake/Documents/ArUco_Detect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect" TYPE SHARED_LIBRARY FILES "/home/oliver/MySoftware/arucodetect/pbuild/ArUcoDetect.so")
-  if(EXISTS "$ENV{DESTDIR}/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so")
+file(INSTALL DESTINATION "/home/jake/Documents/ArUco_Detect/jvpkg/modules/ARCC/ArUcoDetect" TYPE SHARED_LIBRARY FILES "/home/jake/Documents/ArUco_Detect/pbuild/ArUcoDetect.so")
+  if(EXISTS "$ENV{DESTDIR}/home/jake/Documents/ArUco_Detect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/jake/Documents/ArUco_Detect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so"
-         OLD_RPATH "/var/lib/jevois-build/usr/lib:"
+         FILE "$ENV{DESTDIR}/home/jake/Documents/ArUco_Detect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so"
+         OLD_RPATH "/var/lib/jevois-build/usr/lib:/var/lib/jevois-microsd/lib/JeVois:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/oliver/MySoftware/arucodetect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/jake/Documents/ArUco_Detect/jvpkg/modules/ARCC/ArUcoDetect/ArUcoDetect.so")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xbinx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/oliver/MySoftware/arucodetect/jvpkg/share")
+   "/home/jake/Documents/ArUco_Detect/jvpkg/share")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/oliver/MySoftware/arucodetect/jvpkg" TYPE DIRECTORY FILES "/home/oliver/MySoftware/arucodetect/share")
+file(INSTALL DESTINATION "/home/jake/Documents/ArUco_Detect/jvpkg" TYPE DIRECTORY FILES "/home/jake/Documents/ArUco_Detect/share")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -97,5 +97,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/oliver/MySoftware/arucodetect/pbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jake/Documents/ArUco_Detect/pbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

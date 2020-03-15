@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++17 -msse4 -Ofast -W -Wall -Wextra -g -O4 -I/jevois/include -
 
 CXX_DEFINES = -DArUcoDetect_EXPORTS
 
-CXX_INCLUDES = -I/home/oliver/MySoftware/arucodetect -I/var/lib/jevois-build/usr/include 
+CXX_INCLUDES = -I/home/jake/Documents/ArUco_Detect -I/var/lib/jevois-build/usr/include 
 

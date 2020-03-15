@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oliver/MySoftware/arucodetect
+CMAKE_SOURCE_DIR = /home/jake/Documents/ArUco_Detect
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oliver/MySoftware/arucodetect/hbuild
+CMAKE_BINARY_DIR = /home/jake/Documents/ArUco_Detect/hbuild
 
 # Utility rule file for jvpkg.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/oliver/MySoftware/arucodetect/hbuild
 include CMakeFiles/jvpkg.dir/progress.make
 
 CMakeFiles/jvpkg:
-	cd /home/oliver/MySoftware/arucodetect/jvpkg && jevois-jvpkg ../ARCC_arucodetect.jvpkg
+	cd /home/jake/Documents/ArUco_Detect/jvpkg && jevois-jvpkg ../ARCC_arucodetect.jvpkg
 
 jvpkg: CMakeFiles/jvpkg
 jvpkg: CMakeFiles/jvpkg.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/jvpkg.dir/clean:
 .PHONY : CMakeFiles/jvpkg.dir/clean
 
 CMakeFiles/jvpkg.dir/depend:
-	cd /home/oliver/MySoftware/arucodetect/hbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oliver/MySoftware/arucodetect /home/oliver/MySoftware/arucodetect /home/oliver/MySoftware/arucodetect/hbuild /home/oliver/MySoftware/arucodetect/hbuild /home/oliver/MySoftware/arucodetect/hbuild/CMakeFiles/jvpkg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jake/Documents/ArUco_Detect/hbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jake/Documents/ArUco_Detect /home/jake/Documents/ArUco_Detect /home/jake/Documents/ArUco_Detect/hbuild /home/jake/Documents/ArUco_Detect/hbuild /home/jake/Documents/ArUco_Detect/hbuild/CMakeFiles/jvpkg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/jvpkg.dir/depend
 

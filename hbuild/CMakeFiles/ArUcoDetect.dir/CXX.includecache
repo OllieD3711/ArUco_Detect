@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/oliver/MySoftware/arucodetect/src/Modules/ArUcoDetect/ArUcoDetect.C
+/home/jake/Documents/ArUco_Detect/src/Modules/ArUcoDetect/ArUcoDetect.C
 jevois/Core/Module.H
 -
 jevois/Image/RawImageOps.H

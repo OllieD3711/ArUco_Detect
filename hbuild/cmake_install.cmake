@@ -1,4 +1,4 @@
-# Install script for directory: /home/oliver/MySoftware/arucodetect
+# Install script for directory: /home/jake/Documents/ArUco_Detect
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/jevois/modules/ARCC" TYPE DIRECTORY FILES "/home/oliver/MySoftware/arucodetect/src/Modules/ArUcoDetect" REGEX "/modinfo\\.yaml$" EXCLUDE REGEX "/[^/]*\\~$" EXCLUDE REGEX "/[^/]*ubyte$" EXCLUDE REGEX "/[^/]*\\.bin$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+file(INSTALL DESTINATION "/jevois/modules/ARCC" TYPE DIRECTORY FILES "/home/jake/Documents/ArUco_Detect/src/Modules/ArUcoDetect" REGEX "/modinfo\\.yaml$" EXCLUDE REGEX "/[^/]*\\~$" EXCLUDE REGEX "/[^/]*ubyte$" EXCLUDE REGEX "/[^/]*\\.bin$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -64,7 +64,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/jevois/modules/ARCC/ArUcoDetect" TYPE SHARED_LIBRARY FILES "/home/oliver/MySoftware/arucodetect/hbuild/ArUcoDetect.so")
+file(INSTALL DESTINATION "/jevois/modules/ARCC/ArUcoDetect" TYPE SHARED_LIBRARY FILES "/home/jake/Documents/ArUco_Detect/hbuild/ArUcoDetect.so")
   if(EXISTS "$ENV{DESTDIR}/jevois/modules/ARCC/ArUcoDetect/ArUcoDetect.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/jevois/modules/ARCC/ArUcoDetect/ArUcoDetect.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -82,7 +82,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xbinx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/jevois" TYPE DIRECTORY FILES "/home/oliver/MySoftware/arucodetect/share")
+file(INSTALL DESTINATION "/jevois" TYPE DIRECTORY FILES "/home/jake/Documents/ArUco_Detect/share")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -93,5 +93,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/oliver/MySoftware/arucodetect/hbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jake/Documents/ArUco_Detect/hbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

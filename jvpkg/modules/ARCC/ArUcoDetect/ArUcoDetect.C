@@ -52,12 +52,43 @@ struct ArUco_msg {
   float fps; /* frames processed per second */
 }__attribute__((packed));
 
-unsigned char calculateCheckSum(unsigned char *buf, int byteCount, int index){
-    unsigned char csum = 0;
-    for (int i = index; i < byteCount; i++){
-        csum += buf[i];
-    }
-    return csum;
+
+/* the checksum is just for the message body, skipping the header (according to datalink.cpp in GUST) */
+unsigned int calculateCheckSum(unsigned char *buf, int byteCount) {
+
+	unsigned int sum1 = 0xffff;
+	unsigned int sum2 = 0xffff;
+	unsigned int tlen = 0;
+	unsigned int shortCount = byteCount / sizeof(short);
+	unsigned int oddLength = byteCount % 2;
+
+	/* this is Fletcher32 checksum modified to handle buffers with an odd number of bytes */
+
+	while (shortCount) {
+		/* 360 is the largest number of sums that can be performed without overflow */
+		tlen = shortCount > 360 ? 360 : shortCount;
+		shortCount -= tlen;
+		do {
+			sum1 += *buf++;
+			sum1 += (*buf++ << 8);
+			sum2 += sum1;
+		} while (--tlen);
+
+		/* add last byte if there's an odd number of bytes (equivalent to appending a zero-byte) */
+		if ((oddLength == 1) && (shortCount < 1)) {
+			sum1 += *buf++;
+			sum2 += sum1;
+		}
+
+		sum1 = (sum1 & 0xffff) + (sum1 >> 16);
+		sum2 = (sum2 & 0xffff) + (sum2 >> 16);
+	}
+
+	/* Second reduction step to reduce sums to 16 bits */
+	sum1 = (sum1 & 0xffff) + (sum1 >> 16);
+	sum2 = (sum2 & 0xffff) + (sum2 >> 16);
+
+	return(sum2 << 16 | sum1);
 }
 
 std::string encodeSerialMsg(char *buf, int byteCount){
@@ -261,21 +292,28 @@ class ArUcoDetect : public jevois::StdModule
           if (n) { cy /= n; cz /= n; area = abs(area/2.0); }
 
           // Pack message
-          ArUco_msg msg;
-          msg.py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg.pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg.time      = inimg.time_stmp.tv_sec + inimg.time_stmp.tv_usec/1000000.;
-          msg.psqrtA    = sqrt(area);
+          struct ArUco_msg msg_instance;
+	  struct ArUco_msg *msg = &msg_instance;
+	  //struct ArUco_msg *msg = &msg_instance;
+          msg->py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          msg->pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          msg->time      = 0;
+          msg->psqrtA    = sqrt(area);
 
           // Encode message
-          msg.ArUco_header.messageSize = sizeof(struct ArUco_msg);
-          int byteCount         = msg.ArUco_header.messageSize;
+          msg->ArUco_header.messageSize = sizeof(struct ArUco_msg);
+          int byteCount         = msg->ArUco_header.messageSize;
           int headerSize        = sizeof(struct msg_header);
           int index             = headerSize;
-          unsigned int csum     = calculateCheckSum((unsigned char *)&msg, byteCount, index);
-          unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, headerSize - sizeof(int)*2, 0);
-          msg.ArUco_header.csum = csum;
-          msg.ArUco_header.hcsum= hcsum;
+
+	  /* csum is the checksum of just the message content (ignoring the header) */
+          unsigned int csum     = calculateCheckSum((unsigned char *)(&msg[(int)sizeof(struct msg_header)]), (int)(sizeof(struct ArUco_msg) - sizeof(struct msg_header)));
+          
+	  /* hcsum is the checksum of just the header (ignoring the content) -- I don't think GUST checks this... */
+	  unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, sizeof(struct msg_header));
+         
+	  msg->ArUco_header.csum = csum;
+          msg->ArUco_header.hcsum= hcsum;
           std::string ArUco_string = encodeSerialMsg((char *)&msg, byteCount);
           jevois::Module::sendSerial(ArUco_string);
       }
@@ -354,21 +392,27 @@ class ArUcoDetect : public jevois::StdModule
           if (n) { cy /= n; cz /= n; area = abs(area/2.0); }
 
           // Pack message
-          ArUco_msg msg;
-          msg.py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg.pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg.time      = inimg.time_stmp.tv_sec + inimg.time_stmp.tv_usec/1000000.;
-          msg.psqrtA    = sqrt(area);
+          struct ArUco_msg msg_instance;
+	  struct ArUco_msg *msg = &msg_instance;
+          msg->py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          msg->pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          msg->time      = 0;
+          msg->psqrtA    = sqrt(area);
 
           // Encode message
-          msg.ArUco_header.messageSize = sizeof(struct ArUco_msg);
-          int byteCount         = msg.ArUco_header.messageSize;
+          msg->ArUco_header.messageSize = sizeof(struct ArUco_msg);
+          int byteCount         = msg->ArUco_header.messageSize;
           int headerSize        = sizeof(struct msg_header);
           int index             = headerSize;
-          unsigned int csum     = calculateCheckSum((unsigned char *)&msg, byteCount, index);
-          unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, headerSize - sizeof(int)*2, 0);
-          msg.ArUco_header.csum = csum;
-          msg.ArUco_header.hcsum= hcsum;
+
+	  /* csum is the checksum of just the message content (ignoring the header) */
+          unsigned int csum     = calculateCheckSum((unsigned char *)(&msg[(int)sizeof(struct msg_header)]), (int)(sizeof(struct ArUco_msg) - sizeof(struct msg_header)));
+          
+	  /* hcsum is the checksum of just the header (ignoring the content) -- I don't think GUST checks this... */
+	  unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, sizeof(struct msg_header));
+	  
+          msg->ArUco_header.csum = csum;
+          msg->ArUco_header.hcsum= hcsum;
           std::string ArUco_string = encodeSerialMsg((char *)&msg, byteCount);
           jevois::Module::sendSerial(ArUco_string);
       }
