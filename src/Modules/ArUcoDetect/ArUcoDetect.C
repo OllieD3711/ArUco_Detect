@@ -264,7 +264,7 @@ class ArUcoDetect : public jevois::StdModule
           ArUco_msg msg;
           msg.py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
           msg.pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg.time      = inimg.time_stmp.tv_sec + inimg.time_stmp.tv_usec/1000000.;
+          msg.time      = (float)0;
           msg.psqrtA    = sqrt(area);
 
           // Encode message
@@ -357,7 +357,7 @@ class ArUcoDetect : public jevois::StdModule
           ArUco_msg msg;
           msg.py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
           msg.pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg.time      = inimg.time_stmp.tv_sec + inimg.time_stmp.tv_usec/1000000.;
+          msg.time      = (float)0;
           msg.psqrtA    = sqrt(area);
 
           // Encode message
