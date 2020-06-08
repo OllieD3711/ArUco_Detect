@@ -278,9 +278,9 @@ class ArUcoDetect : public jevois::StdModule
 	  /* csum is the checksum of just the message content (ignoring the header) */
           unsigned int csum     = calculateCheckSum((unsigned char *)(&msg[(int)sizeof(struct msg_header)]), (int)(sizeof(struct ArUco_msg) - sizeof(struct msg_header)));
           
-	  /* hcsum is the checksum of just the header (ignoring the content) -- I don't think GUST checks this... */
-	  unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, sizeof(struct msg_header));
-         
+	  /* hcsum is the checksum of just the header, not including hcsum and csum */
+          unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, sizeof(struct msg_header) - 2*sizeof(int));
+
 	  msg->ArUco_header.csum = csum;
           msg->ArUco_header.hcsum= hcsum;
           std::string ArUco_string = encodeSerialMsg((char *)&msg, byteCount);
