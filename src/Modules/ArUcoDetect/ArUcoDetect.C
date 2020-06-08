@@ -27,31 +27,35 @@
 #define ARUCO_SYNC2 0xb2
 #define ARUCO_SYNC3 0xc1
 
-struct msg_header{
-    unsigned char sync1; /*  */
-    unsigned char sync2; /*  */
-    unsigned char sync3; /*  */
-    unsigned char spare; /*  */
-    int messageID; /* id # */
-    int messageSize; /* including header */
-    unsigned int hcsum; /*  */
-    unsigned int csum; /*  */
-}__attribute__((packed));
+struct datalinkHeader_ref{
+  unsigned char sync1;
+  unsigned char sync2;
+  unsigned char sync3;
+  unsigned char spare; /* 0 */
+  int messageID;
+  int messageSize; /* including the header */
+  int hcsum; /* not including either checksum */
+  int csum; /* of the message body only */
+};
 
-struct ArUco_msg {
-  ArUco_msg() {ArUco_header.sync1    = ARUCO_SYNC1;
-              ArUco_header.sync2     = ARUCO_SYNC2;
-              ArUco_header.sync3     = ARUCO_SYNC3;
-              ArUco_header.messageID = ARUCO_MSG_ID;}
-  msg_header ArUco_header;
-  int count; /*  */
-  float time; /* time (sec) */
-  float py; /* pixel y location (+ right) */
-  float pz; /* pixel z location (+ down) */
-  float psqrtA; /* pixel square root of Area */
-  float confidence; /* confidence in solution */
-  float fps; /* frames processed per second */
-}__attribute__((packed));
+struct obDatalinkMessageNavIP1 {
+  unsigned char sync1;
+  unsigned char sync2;
+  unsigned char sync3;
+  unsigned char spare; /* 0 */
+  int messageID;
+  int messageSize; /* including the header */
+  int hcsum; /* not including either checksum */
+  int csum; /* of the message body only */
+
+  int count;
+  float time;
+  float py;
+  float pz;
+  float psqrtA;
+  float confidence;
+  float fps;
+};
 
 /* the checksum is just for the message body, skipping the header (according to datalink.cpp in GUST) */
 unsigned int calculateCheckSum(unsigned char *buf, int byteCount) {
@@ -260,33 +264,39 @@ class ArUcoDetect : public jevois::StdModule
           }
           if (n) { cy /= n; cz /= n; area = abs(area/2.0); }
 
-          // Pack message
-          struct ArUco_msg msg_instance;
-	  struct ArUco_msg *msg = &msg_instance;
-	  //struct ArUco_msg *msg = &msg_instance;
-          msg->py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg->pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg->time      = 0;
-          msg->psqrtA    = sqrt(area);
+          /* construct the message */
+          struct datalinkMessageNavIP1_ref datalinkMessageNavIP1;
+          struct datalinkMessageNavIP1_ref *navmessage = &datalinkMessageNavIP1;
+          static int callcounter = 1;
 
-          // Encode message
-          msg->ArUco_header.messageSize = sizeof(struct ArUco_msg);
-          int byteCount         = msg->ArUco_header.messageSize;
-          int headerSize        = sizeof(struct msg_header);
-          int index             = headerSize;
+          /* set the sync bytes */
+          navmessage->sync1 = ARUCO_SYNC1;
+          navmessage->sync2 = ARUCO_SYNC2;
+          navmessage->sync3 = ARUCO_SYNC3;
+          navmessage->spare = 0;
+          navmessage->messageID = ARUCO_MSG_ID;
+          navmessage->messageSize = sizeof(struct datalinkMessageNavIP1_ref); /* includes all information */
 
-	  /* csum is the checksum of just the message content (ignoring the header) */
-          unsigned int csum     = calculateCheckSum((unsigned char *)(&msg[(int)sizeof(struct msg_header)]), (int)(sizeof(struct ArUco_msg) - sizeof(struct msg_header)));
-          
-	  /* hcsum is the checksum of just the header, not including hcsum and csum */
-          unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, sizeof(struct msg_header) - 2*sizeof(int));
+          /* compute the header checksum, excluding the two csums */
+          navmessage->hcsum = calculateCheckSum( (unsigned char *)navmessage, (int)((int)sizeof(struct datalinkHeader_ref) - 2*sizeof(int)) );
+          navmessage->count = callcounter;
+          callcounter++; /* increment the call counter */
+          navmessage->time = 0;
+          navmessage->py = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          navmessage->pz = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          navmessage->psqrtA = sqrt(area);
+          navmessage->confidence = 0;
+          navmessage->fps = 0;
 
-	  msg->ArUco_header.csum = csum;
-          msg->ArUco_header.hcsum= hcsum;
-          std::string ArUco_string = encodeSerialMsg((char *)&msg, byteCount);
+          /* compute the message checksum, which doesn't include the header contents */
+          navmessage->csum = calculateCheckSum(&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct datalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
+
+          /* write the data over the config-file-selected serial output */
+          std::string ArUco_string = encodeSerialMsg((char *)navmessage, navmessage->messageSize);
           jevois::Module::sendSerial(ArUco_string);
       }
     }
+
 
 
     //! Processing function with output video to USB
@@ -360,29 +370,35 @@ class ArUcoDetect : public jevois::StdModule
           }
           if (n) { cy /= n; cz /= n; area = abs(area/2.0); }
 
-          // Pack message
-          struct ArUco_msg msg_instance;
-	  struct ArUco_msg *msg = &msg_instance;
-          msg->py        = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg->pz        = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          msg->time      = 0;
-          msg->psqrtA    = sqrt(area);
+          /* construct the message */
+          struct datalinkMessageNavIP1_ref datalinkMessageNavIP1;
+          struct datalinkMessageNavIP1_ref *navmessage = &datalinkMessageNavIP1;
+          static int callcounter = 1;
 
-          // Encode message
-          msg->ArUco_header.messageSize = sizeof(struct ArUco_msg);
-          int byteCount         = msg->ArUco_header.messageSize;
-          int headerSize        = sizeof(struct msg_header);
-          int index             = headerSize;
+          /* set the sync bytes */
+          navmessage->sync1 = ARUCO_SYNC1;
+          navmessage->sync2 = ARUCO_SYNC2;
+          navmessage->sync3 = ARUCO_SYNC3;
+          navmessage->spare = 0;
+          navmessage->messageID = ARUCO_MSG_ID;
+          navmessage->messageSize = sizeof(struct datalinkMessageNavIP1_ref); /* includes all information */
 
-	  /* csum is the checksum of just the message content (ignoring the header) */
-          unsigned int csum     = calculateCheckSum((unsigned char *)(&msg[(int)sizeof(struct msg_header)]), (int)(sizeof(struct ArUco_msg) - sizeof(struct msg_header)));
-          
-	  /* hcsum is the checksum of just the header (ignoring the content) -- I don't think GUST checks this... */
-	  unsigned int hcsum    = calculateCheckSum((unsigned char *)&msg, sizeof(struct msg_header));
-	  
-          msg->ArUco_header.csum = csum;
-          msg->ArUco_header.hcsum= hcsum;
-          std::string ArUco_string = encodeSerialMsg((char *)&msg, byteCount);
+          /* compute the header checksum, excluding the two csums */
+          navmessage->hcsum = calculateCheckSum( (unsigned char *)navmessage, (int)((int)sizeof(struct datalinkHeader_ref) - 2*sizeof(int)) );
+          navmessage->count = callcounter;
+          callcounter++; /* increment the call counter */
+          navmessage->time = 0;
+          navmessage->py = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          navmessage->pz = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          navmessage->psqrtA = sqrt(area);
+          navmessage->confidence = 0;
+          navmessage->fps = 0;
+
+          /* compute the message checksum, which doesn't include the header contents */
+          navmessage->csum = calculateCheckSum(&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct datalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
+
+          /* write the data over the config-file-selected serial output */
+          std::string ArUco_string = encodeSerialMsg((char *)navmessage, navmessage->messageSize);
           jevois::Module::sendSerial(ArUco_string);
       }
 
