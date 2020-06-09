@@ -27,7 +27,7 @@
 #define ARUCO_SYNC2 0xb2
 #define ARUCO_SYNC3 0xc1
 
-struct datalinkHeader_ref{
+struct datalinkHeader_ref {
   unsigned char sync1;
   unsigned char sync2;
   unsigned char sync3;
@@ -38,7 +38,7 @@ struct datalinkHeader_ref{
   int csum; /* of the message body only */
 };
 
-struct obDatalinkMessageNavIP1 {
+struct obDatalinkMessageNavIP1_ref {
   unsigned char sync1;
   unsigned char sync2;
   unsigned char sync3;
@@ -265,8 +265,8 @@ class ArUcoDetect : public jevois::StdModule
           if (n) { cy /= n; cz /= n; area = abs(area/2.0); }
 
           /* construct the message */
-          struct datalinkMessageNavIP1_ref datalinkMessageNavIP1;
-          struct datalinkMessageNavIP1_ref *navmessage = &datalinkMessageNavIP1;
+          struct obDatalinkMessageNavIP1_ref obDatalinkMessageNavIP1;
+          struct obDatalinkMessageNavIP1_ref *navmessage = &obDatalinkMessageNavIP1;
           static int callcounter = 1;
 
           /* set the sync bytes */
@@ -275,7 +275,7 @@ class ArUcoDetect : public jevois::StdModule
           navmessage->sync3 = ARUCO_SYNC3;
           navmessage->spare = 0;
           navmessage->messageID = ARUCO_MSG_ID;
-          navmessage->messageSize = sizeof(struct datalinkMessageNavIP1_ref); /* includes all information */
+          navmessage->messageSize = sizeof(struct obDatalinkMessageNavIP1_ref); /* includes all information */
 
           /* compute the header checksum, excluding the two csums */
           navmessage->hcsum = calculateCheckSum( (unsigned char *)navmessage, (int)((int)sizeof(struct datalinkHeader_ref) - 2*sizeof(int)) );
@@ -289,7 +289,7 @@ class ArUcoDetect : public jevois::StdModule
           navmessage->fps = 0;
 
           /* compute the message checksum, which doesn't include the header contents */
-          navmessage->csum = calculateCheckSum(&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct datalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
+          navmessage->csum = calculateCheckSum((unsigned char *)&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct obDatalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
 
           /* write the data over the config-file-selected serial output */
           std::string ArUco_string = encodeSerialMsg((char *)navmessage, navmessage->messageSize);
@@ -371,8 +371,8 @@ class ArUcoDetect : public jevois::StdModule
           if (n) { cy /= n; cz /= n; area = abs(area/2.0); }
 
           /* construct the message */
-          struct datalinkMessageNavIP1_ref datalinkMessageNavIP1;
-          struct datalinkMessageNavIP1_ref *navmessage = &datalinkMessageNavIP1;
+          struct obDatalinkMessageNavIP1_ref obDatalinkMessageNavIP1;
+          struct obDatalinkMessageNavIP1_ref *navmessage = &obDatalinkMessageNavIP1;
           static int callcounter = 1;
 
           /* set the sync bytes */
@@ -381,7 +381,7 @@ class ArUcoDetect : public jevois::StdModule
           navmessage->sync3 = ARUCO_SYNC3;
           navmessage->spare = 0;
           navmessage->messageID = ARUCO_MSG_ID;
-          navmessage->messageSize = sizeof(struct datalinkMessageNavIP1_ref); /* includes all information */
+          navmessage->messageSize = sizeof(struct obDatalinkMessageNavIP1_ref); /* includes all information */
 
           /* compute the header checksum, excluding the two csums */
           navmessage->hcsum = calculateCheckSum( (unsigned char *)navmessage, (int)((int)sizeof(struct datalinkHeader_ref) - 2*sizeof(int)) );
@@ -395,7 +395,7 @@ class ArUcoDetect : public jevois::StdModule
           navmessage->fps = 0;
 
           /* compute the message checksum, which doesn't include the header contents */
-          navmessage->csum = calculateCheckSum(&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct datalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
+          navmessage->csum = calculateCheckSum((unsigned char *)&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct obDatalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
 
           /* write the data over the config-file-selected serial output */
           std::string ArUco_string = encodeSerialMsg((char *)navmessage, navmessage->messageSize);
