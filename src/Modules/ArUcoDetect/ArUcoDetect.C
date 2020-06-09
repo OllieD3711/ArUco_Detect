@@ -36,7 +36,7 @@ struct datalinkHeader_ref {
   int messageSize; /* including the header */
   unsigned int hcsum; /* not including either checksum */
   unsigned int csum; /* of the message body only */
-};
+}__attribute__((packed));
 
 struct obDatalinkMessageNavIP1_ref {
   unsigned char sync1;
@@ -55,7 +55,7 @@ struct obDatalinkMessageNavIP1_ref {
   float psqrtA;
   float confidence;
   float fps;
-};
+}__attribute__((packed));
 
 /* the checksum is just for the message body, skipping the header (according to datalink.cpp in GUST) */
 unsigned int calculateCheckSum(unsigned char *buf, int byteCount) {
@@ -275,18 +275,18 @@ class ArUcoDetect : public jevois::StdModule
           navmessage->sync3 = ARUCO_SYNC3;
           navmessage->spare = 0;
           navmessage->messageID = ARUCO_MSG_ID;
-          navmessage->messageSize = sizeof(struct obDatalinkMessageNavIP1_ref); /* includes all information */
+          navmessage->messageSize = (int)sizeof(struct obDatalinkMessageNavIP1_ref); /* includes all information */
 
           /* compute the header checksum, excluding the two csums */
           navmessage->hcsum = calculateCheckSum( (unsigned char *)navmessage, (int)((int)sizeof(struct datalinkHeader_ref) - 2*sizeof(int)) );
           navmessage->count = callcounter;
           callcounter++; /* increment the call counter */
-          navmessage->time = 0;
-          navmessage->py = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          navmessage->pz = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          navmessage->psqrtA = sqrt(area);
-          navmessage->confidence = 0;
-          navmessage->fps = 0;
+          navmessage->time = (float)0;
+          navmessage->py = (float)(cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          navmessage->pz = (float)(cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          navmessage->psqrtA = (float)sqrt(area);
+          navmessage->confidence = (float)0;
+          navmessage->fps = (float)0;
 
           /* compute the message checksum, which doesn't include the header contents */
           navmessage->csum = calculateCheckSum((unsigned char *)&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct obDatalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
@@ -381,18 +381,18 @@ class ArUcoDetect : public jevois::StdModule
           navmessage->sync3 = ARUCO_SYNC3;
           navmessage->spare = 0;
           navmessage->messageID = ARUCO_MSG_ID;
-          navmessage->messageSize = sizeof(struct obDatalinkMessageNavIP1_ref); /* includes all information */
+          navmessage->messageSize = (int)sizeof(struct obDatalinkMessageNavIP1_ref); /* includes all information */
 
           /* compute the header checksum, excluding the two csums */
           navmessage->hcsum = calculateCheckSum( (unsigned char *)navmessage, (int)((int)sizeof(struct datalinkHeader_ref) - 2*sizeof(int)) );
           navmessage->count = callcounter;
           callcounter++; /* increment the call counter */
-          navmessage->time = 0;
-          navmessage->py = (cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          navmessage->pz = (cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
-          navmessage->psqrtA = sqrt(area);
-          navmessage->confidence = 0;
-          navmessage->fps = 0;
+          navmessage->time = (float)0;
+          navmessage->py = (float)(cy - 0.5*(float)w)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          navmessage->pz = (float)(cz - 0.5*(float)h)/(0.5*(float)w)*(h/((double)w));  // or *(IMGHEIGHT/IMGWIDTH)
+          navmessage->psqrtA = (float)sqrt(area);
+          navmessage->confidence = (float)0;
+          navmessage->fps = (float)0;
 
           /* compute the message checksum, which doesn't include the header contents */
           navmessage->csum = calculateCheckSum((unsigned char *)&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct obDatalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
