@@ -95,7 +95,7 @@ unsigned int calculateCheckSum(unsigned char *buf, int byteCount) {
 	return(sum2 << 16 | sum1);
 }
 
-std::string encodeSerialMsg(char *buf, int byteCount){
+std::string encodeSerialMsg(unsigned char *buf, int byteCount){
     std::string msg;
     for (int i = 0; i < byteCount; i++){
         msg += buf[i];
@@ -292,7 +292,7 @@ class ArUcoDetect : public jevois::StdModule
           navmessage->csum = calculateCheckSum((unsigned char *)&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct obDatalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
 
           /* write the data over the config-file-selected serial output */
-          std::string ArUco_string = encodeSerialMsg((char *)navmessage, navmessage->messageSize);
+          std::string ArUco_string = encodeSerialMsg((unsigned char *)navmessage, navmessage->messageSize);
           jevois::Module::sendSerial(ArUco_string);
       }
     }
@@ -398,7 +398,7 @@ class ArUcoDetect : public jevois::StdModule
           navmessage->csum = calculateCheckSum((unsigned char *)&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct obDatalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
 
           /* write the data over the config-file-selected serial output */
-          std::string ArUco_string = encodeSerialMsg((char *)navmessage, navmessage->messageSize);
+          std::string ArUco_string = encodeSerialMsg((unsigned char *)navmessage, navmessage->messageSize);
           jevois::Module::sendSerial(ArUco_string);
       }
 
