@@ -34,8 +34,8 @@ struct datalinkHeader_ref {
   unsigned char spare; /* 0 */
   int messageID;
   int messageSize; /* including the header */
-  int hcsum; /* not including either checksum */
-  int csum; /* of the message body only */
+  unsigned int hcsum; /* not including either checksum */
+  unsigned int csum; /* of the message body only */
 };
 
 struct obDatalinkMessageNavIP1_ref {
@@ -45,8 +45,8 @@ struct obDatalinkMessageNavIP1_ref {
   unsigned char spare; /* 0 */
   int messageID;
   int messageSize; /* including the header */
-  int hcsum; /* not including either checksum */
-  int csum; /* of the message body only */
+  unsigned int hcsum; /* not including either checksum */
+  unsigned int csum; /* of the message body only */
 
   int count;
   float time;
