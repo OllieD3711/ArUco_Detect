@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oliver/MySoftware/arucodetect
+CMAKE_SOURCE_DIR = /home/jake/Documents/ArUco_Detect
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oliver/MySoftware/arucodetect/pbuild
+CMAKE_BINARY_DIR = /home/jake/Documents/ArUco_Detect/pbuild
 
 # Utility rule file for modinfo_ArUcoDetect.
 
@@ -58,8 +58,8 @@ CMakeFiles/modinfo_ArUcoDetect: ../src/Modules/ArUcoDetect/ArUcoDetect.C
 
 
 ../src/Modules/ArUcoDetect/modinfo.yaml: ../src/Modules/ArUcoDetect/ArUcoDetect.C
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../src/Modules/ArUcoDetect/modinfo.yaml, ../src/Modules/ArUcoDetect/modinfo.html"
-	cd /home/oliver/MySoftware/arucodetect/src/Modules/ArUcoDetect && jevois-modinfo ArUcoDetect.C
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../src/Modules/ArUcoDetect/modinfo.yaml, ../src/Modules/ArUcoDetect/modinfo.html"
+	cd /home/jake/Documents/ArUco_Detect/src/Modules/ArUcoDetect && jevois-modinfo ArUcoDetect.C
 
 ../src/Modules/ArUcoDetect/modinfo.html: ../src/Modules/ArUcoDetect/modinfo.yaml
 	@$(CMAKE_COMMAND) -E touch_nocreate ../src/Modules/ArUcoDetect/modinfo.html
@@ -81,6 +81,6 @@ CMakeFiles/modinfo_ArUcoDetect.dir/clean:
 .PHONY : CMakeFiles/modinfo_ArUcoDetect.dir/clean
 
 CMakeFiles/modinfo_ArUcoDetect.dir/depend:
-	cd /home/oliver/MySoftware/arucodetect/pbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oliver/MySoftware/arucodetect /home/oliver/MySoftware/arucodetect /home/oliver/MySoftware/arucodetect/pbuild /home/oliver/MySoftware/arucodetect/pbuild /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/modinfo_ArUcoDetect.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jake/Documents/ArUco_Detect/pbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jake/Documents/ArUco_Detect /home/jake/Documents/ArUco_Detect /home/jake/Documents/ArUco_Detect/pbuild /home/jake/Documents/ArUco_Detect/pbuild /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/modinfo_ArUcoDetect.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/modinfo_ArUcoDetect.dir/depend
 

@@ -1,4 +1,4 @@
-The system is: Linux - 4.15.0-88-generic - x86_64
+The system is: Linux - 5.3.0-53-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/3.10.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/3.10.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp
+Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_597f8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_597f8.dir/build.make CMakeFiles/cmTC_597f8.dir/build
-make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_597f8.dir/testCCompiler.c.o
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc    -o CMakeFiles/cmTC_597f8.dir/testCCompiler.c.o   -c /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_597f8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_597f8.dir/link.txt --verbose=1
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc      -rdynamic CMakeFiles/cmTC_597f8.dir/testCCompiler.c.o  -o cmTC_597f8 
-make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_6165c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6165c.dir/build.make CMakeFiles/cmTC_6165c.dir/build
+make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6165c.dir/testCCompiler.c.o
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc    -o CMakeFiles/cmTC_6165c.dir/testCCompiler.c.o   -c /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_6165c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6165c.dir/link.txt --verbose=1
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc      -rdynamic CMakeFiles/cmTC_6165c.dir/testCCompiler.c.o  -o cmTC_6165c 
+make[1]: Leaving directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp
+Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_89d31/fast"
-/usr/bin/make -f CMakeFiles/cmTC_89d31.dir/build.make CMakeFiles/cmTC_89d31.dir/build
-make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_89d31.dir/CMakeCCompilerABI.c.o
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc    -o CMakeFiles/cmTC_89d31.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_89d31
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89d31.dir/link.txt --verbose=1
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc     -v -rdynamic CMakeFiles/cmTC_89d31.dir/CMakeCCompilerABI.c.o  -o cmTC_89d31 
+Run Build Command:"/usr/bin/make" "cmTC_d2e9c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d2e9c.dir/build.make CMakeFiles/cmTC_d2e9c.dir/build
+make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2e9c.dir/CMakeCCompilerABI.c.o
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc    -o CMakeFiles/cmTC_d2e9c.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_d2e9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2e9c.dir/link.txt --verbose=1
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc     -v -rdynamic CMakeFiles/cmTC_d2e9c.dir/CMakeCCompilerABI.c.o  -o cmTC_d2e9c 
 Using built-in specs.
 COLLECT_GCC=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/bin/arm-buildroot-linux-gnueabihf-gcc.br_real
 COLLECT_LTO_WRAPPER=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper
@@ -59,24 +59,24 @@ Thread model: posix
 gcc version 8.3.0 (Buildroot 2019.05-rc2-gd5ae55ae4) 
 COMPILER_PATH=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/bin/
 LIBRARY_PATH=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_89d31' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd'
- /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/collect2 -plugin /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/liblto_plugin.so -plugin-opt=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccifkv7w.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_89d31 /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crt1.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crti.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtbegin.o -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0 -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib CMakeFiles/cmTC_89d31.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtend.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_89d31' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd'
-make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d2e9c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd'
+ /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/collect2 -plugin /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/liblto_plugin.so -plugin-opt=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccD50Bai.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_d2e9c /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crt1.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crti.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtbegin.o -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0 -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib CMakeFiles/cmTC_d2e9c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtend.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d2e9c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd'
+make[1]: Leaving directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_89d31/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_89d31.dir/build.make CMakeFiles/cmTC_89d31.dir/build]
-  ignore line: [make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_89d31.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc    -o CMakeFiles/cmTC_89d31.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_89d31]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89d31.dir/link.txt --verbose=1]
-  ignore line: [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc     -v -rdynamic CMakeFiles/cmTC_89d31.dir/CMakeCCompilerABI.c.o  -o cmTC_89d31 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d2e9c/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d2e9c.dir/build.make CMakeFiles/cmTC_d2e9c.dir/build]
+  ignore line: [make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d2e9c.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc    -o CMakeFiles/cmTC_d2e9c.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_d2e9c]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2e9c.dir/link.txt --verbose=1]
+  ignore line: [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc     -v -rdynamic CMakeFiles/cmTC_d2e9c.dir/CMakeCCompilerABI.c.o  -o cmTC_d2e9c ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/bin/arm-buildroot-linux-gnueabihf-gcc.br_real]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper]
@@ -86,13 +86,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.3.0 (Buildroot 2019.05-rc2-gd5ae55ae4) ]
   ignore line: [COMPILER_PATH=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/bin/]
   ignore line: [LIBRARY_PATH=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_89d31' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd']
-  link line: [ /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/collect2 -plugin /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/liblto_plugin.so -plugin-opt=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccifkv7w.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_89d31 /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crt1.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crti.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtbegin.o -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0 -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib CMakeFiles/cmTC_89d31.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtend.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d2e9c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd']
+  link line: [ /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/collect2 -plugin /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/liblto_plugin.so -plugin-opt=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccD50Bai.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_d2e9c /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crt1.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crti.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtbegin.o -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0 -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib CMakeFiles/cmTC_d2e9c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtend.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crtn.o]
     arg [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccifkv7w.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccD50Bai.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -107,7 +107,7 @@ Parsed C implicit link information from above output:
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_89d31] ==> ignore
+    arg [cmTC_d2e9c] ==> ignore
     arg [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crt1.o] ==> ignore
     arg [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crti.o] ==> ignore
     arg [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtbegin.o] ==> ignore
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib] ==> dir [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib]
     arg [-L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib] ==> dir [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib]
     arg [-L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib] ==> dir [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib]
-    arg [CMakeFiles/cmTC_89d31.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_d2e9c.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -139,17 +139,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp
+Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_18101/fast"
-/usr/bin/make -f CMakeFiles/cmTC_18101.dir/build.make CMakeFiles/cmTC_18101.dir/build
-make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_18101.dir/feature_tests.c.o
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc   -std=c11 -o CMakeFiles/cmTC_18101.dir/feature_tests.c.o   -c /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/feature_tests.c
-Linking C executable cmTC_18101
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18101.dir/link.txt --verbose=1
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc      -rdynamic CMakeFiles/cmTC_18101.dir/feature_tests.c.o  -o cmTC_18101 
-make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_c2059/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c2059.dir/build.make CMakeFiles/cmTC_c2059.dir/build
+make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c2059.dir/feature_tests.c.o
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc   -std=c11 -o CMakeFiles/cmTC_c2059.dir/feature_tests.c.o   -c /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c2059
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2059.dir/link.txt --verbose=1
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc      -rdynamic CMakeFiles/cmTC_c2059.dir/feature_tests.c.o  -o cmTC_c2059 
+make[1]: Leaving directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -159,17 +159,17 @@ make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFile
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp
+Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6edfa/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6edfa.dir/build.make CMakeFiles/cmTC_6edfa.dir/build
-make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6edfa.dir/feature_tests.c.o
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc   -std=c99 -o CMakeFiles/cmTC_6edfa.dir/feature_tests.c.o   -c /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6edfa
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6edfa.dir/link.txt --verbose=1
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc      -rdynamic CMakeFiles/cmTC_6edfa.dir/feature_tests.c.o  -o cmTC_6edfa 
-make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_cdf1b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cdf1b.dir/build.make CMakeFiles/cmTC_cdf1b.dir/build
+make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cdf1b.dir/feature_tests.c.o
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc   -std=c99 -o CMakeFiles/cmTC_cdf1b.dir/feature_tests.c.o   -c /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/feature_tests.c
+Linking C executable cmTC_cdf1b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdf1b.dir/link.txt --verbose=1
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc      -rdynamic CMakeFiles/cmTC_cdf1b.dir/feature_tests.c.o  -o cmTC_cdf1b 
+make[1]: Leaving directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -179,17 +179,17 @@ make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFile
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp
+Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a9914/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a9914.dir/build.make CMakeFiles/cmTC_a9914.dir/build
-make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a9914.dir/feature_tests.c.o
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc   -std=c90 -o CMakeFiles/cmTC_a9914.dir/feature_tests.c.o   -c /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/feature_tests.c
-Linking C executable cmTC_a9914
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9914.dir/link.txt --verbose=1
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc      -rdynamic CMakeFiles/cmTC_a9914.dir/feature_tests.c.o  -o cmTC_a9914 
-make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_90f5d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_90f5d.dir/build.make CMakeFiles/cmTC_90f5d.dir/build
+make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_90f5d.dir/feature_tests.c.o
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc   -std=c90 -o CMakeFiles/cmTC_90f5d.dir/feature_tests.c.o   -c /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/feature_tests.c
+Linking C executable cmTC_90f5d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90f5d.dir/link.txt --verbose=1
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-gcc      -rdynamic CMakeFiles/cmTC_90f5d.dir/feature_tests.c.o  -o cmTC_90f5d 
+make[1]: Leaving directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -197,30 +197,30 @@ make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFile
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp
+Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7704d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7704d.dir/build.make CMakeFiles/cmTC_7704d.dir/build
-make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7704d.dir/testCXXCompiler.cxx.o
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++     -o CMakeFiles/cmTC_7704d.dir/testCXXCompiler.cxx.o -c /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_7704d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7704d.dir/link.txt --verbose=1
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++       -rdynamic CMakeFiles/cmTC_7704d.dir/testCXXCompiler.cxx.o  -o cmTC_7704d 
-make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_bed78/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bed78.dir/build.make CMakeFiles/cmTC_bed78.dir/build
+make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bed78.dir/testCXXCompiler.cxx.o
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++     -o CMakeFiles/cmTC_bed78.dir/testCXXCompiler.cxx.o -c /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_bed78
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bed78.dir/link.txt --verbose=1
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++       -rdynamic CMakeFiles/cmTC_bed78.dir/testCXXCompiler.cxx.o  -o cmTC_bed78 
+make[1]: Leaving directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp
+Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a4d9b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a4d9b.dir/build.make CMakeFiles/cmTC_a4d9b.dir/build
-make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a4d9b.dir/CMakeCXXCompilerABI.cpp.o
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++     -o CMakeFiles/cmTC_a4d9b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_a4d9b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4d9b.dir/link.txt --verbose=1
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++      -v -rdynamic CMakeFiles/cmTC_a4d9b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a4d9b 
+Run Build Command:"/usr/bin/make" "cmTC_0f8cf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0f8cf.dir/build.make CMakeFiles/cmTC_0f8cf.dir/build
+make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0f8cf.dir/CMakeCXXCompilerABI.cpp.o
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++     -o CMakeFiles/cmTC_0f8cf.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_0f8cf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f8cf.dir/link.txt --verbose=1
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++      -v -rdynamic CMakeFiles/cmTC_0f8cf.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_0f8cf 
 Using built-in specs.
 COLLECT_GCC=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/bin/arm-buildroot-linux-gnueabihf-g++.br_real
 COLLECT_LTO_WRAPPER=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper
@@ -230,24 +230,24 @@ Thread model: posix
 gcc version 8.3.0 (Buildroot 2019.05-rc2-gd5ae55ae4) 
 COMPILER_PATH=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/bin/
 LIBRARY_PATH=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a4d9b' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd'
- /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/collect2 -plugin /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/liblto_plugin.so -plugin-opt=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjsi4D2.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_a4d9b /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crt1.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crti.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtbegin.o -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0 -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib CMakeFiles/cmTC_a4d9b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtend.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a4d9b' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd'
-make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0f8cf' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd'
+ /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/collect2 -plugin /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/liblto_plugin.so -plugin-opt=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBiL2xR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_0f8cf /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crt1.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crti.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtbegin.o -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0 -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib CMakeFiles/cmTC_0f8cf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtend.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0f8cf' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd'
+make[1]: Leaving directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a4d9b/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a4d9b.dir/build.make CMakeFiles/cmTC_a4d9b.dir/build]
-  ignore line: [make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_a4d9b.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++     -o CMakeFiles/cmTC_a4d9b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_a4d9b]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4d9b.dir/link.txt --verbose=1]
-  ignore line: [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++      -v -rdynamic CMakeFiles/cmTC_a4d9b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a4d9b ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_0f8cf/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_0f8cf.dir/build.make CMakeFiles/cmTC_0f8cf.dir/build]
+  ignore line: [make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_0f8cf.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++     -o CMakeFiles/cmTC_0f8cf.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_0f8cf]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f8cf.dir/link.txt --verbose=1]
+  ignore line: [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++      -v -rdynamic CMakeFiles/cmTC_0f8cf.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_0f8cf ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/bin/arm-buildroot-linux-gnueabihf-g++.br_real]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper]
@@ -257,13 +257,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 8.3.0 (Buildroot 2019.05-rc2-gd5ae55ae4) ]
   ignore line: [COMPILER_PATH=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/bin/]
   ignore line: [LIBRARY_PATH=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a4d9b' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd']
-  link line: [ /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/collect2 -plugin /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/liblto_plugin.so -plugin-opt=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjsi4D2.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_a4d9b /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crt1.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crti.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtbegin.o -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0 -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib CMakeFiles/cmTC_a4d9b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtend.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_0f8cf' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-marm' '-mtls-dialect=gnu' '-march=armv7ve+simd']
+  link line: [ /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/collect2 -plugin /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/liblto_plugin.so -plugin-opt=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBiL2xR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTC_0f8cf /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crt1.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crti.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtbegin.o -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0 -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib CMakeFiles/cmTC_0f8cf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtend.o /usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crtn.o]
     arg [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/libexec/gcc/arm-buildroot-linux-gnueabihf/8.3.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccjsi4D2.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccBiL2xR.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -278,7 +278,7 @@ Parsed CXX implicit link information from above output:
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_a4d9b] ==> ignore
+    arg [cmTC_0f8cf] ==> ignore
     arg [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crt1.o] ==> ignore
     arg [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/crti.o] ==> ignore
     arg [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/crtbegin.o] ==> ignore
@@ -286,7 +286,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib] ==> dir [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/lib/gcc/arm-buildroot-linux-gnueabihf/8.3.0/../../../../arm-buildroot-linux-gnueabihf/lib]
     arg [-L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib] ==> dir [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/lib]
     arg [-L/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib] ==> dir [/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib]
-    arg [CMakeFiles/cmTC_a4d9b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_0f8cf.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -308,17 +308,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp
+Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_60db5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_60db5.dir/build.make CMakeFiles/cmTC_60db5.dir/build
-make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_60db5.dir/feature_tests.cxx.o
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++    -std=c++1z -o CMakeFiles/cmTC_60db5.dir/feature_tests.cxx.o -c /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_60db5
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60db5.dir/link.txt --verbose=1
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++       -rdynamic CMakeFiles/cmTC_60db5.dir/feature_tests.cxx.o  -o cmTC_60db5 
-make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_c4232/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4232.dir/build.make CMakeFiles/cmTC_c4232.dir/build
+make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c4232.dir/feature_tests.cxx.o
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++    -std=c++1z -o CMakeFiles/cmTC_c4232.dir/feature_tests.cxx.o -c /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c4232
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4232.dir/link.txt --verbose=1
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++       -rdynamic CMakeFiles/cmTC_c4232.dir/feature_tests.cxx.o  -o cmTC_c4232 
+make[1]: Leaving directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -381,17 +381,17 @@ make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFile
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp
+Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e743e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e743e.dir/build.make CMakeFiles/cmTC_e743e.dir/build
-make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e743e.dir/feature_tests.cxx.o
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++    -std=c++14 -o CMakeFiles/cmTC_e743e.dir/feature_tests.cxx.o -c /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e743e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e743e.dir/link.txt --verbose=1
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++       -rdynamic CMakeFiles/cmTC_e743e.dir/feature_tests.cxx.o  -o cmTC_e743e 
-make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_37ec7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_37ec7.dir/build.make CMakeFiles/cmTC_37ec7.dir/build
+make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_37ec7.dir/feature_tests.cxx.o
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++    -std=c++14 -o CMakeFiles/cmTC_37ec7.dir/feature_tests.cxx.o -c /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_37ec7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37ec7.dir/link.txt --verbose=1
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++       -rdynamic CMakeFiles/cmTC_37ec7.dir/feature_tests.cxx.o  -o cmTC_37ec7 
+make[1]: Leaving directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -454,17 +454,17 @@ make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFile
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp
+Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ed373/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ed373.dir/build.make CMakeFiles/cmTC_ed373.dir/build
-make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ed373.dir/feature_tests.cxx.o
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++    -std=c++11 -o CMakeFiles/cmTC_ed373.dir/feature_tests.cxx.o -c /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ed373
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed373.dir/link.txt --verbose=1
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++       -rdynamic CMakeFiles/cmTC_ed373.dir/feature_tests.cxx.o  -o cmTC_ed373 
-make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_68d9a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_68d9a.dir/build.make CMakeFiles/cmTC_68d9a.dir/build
+make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_68d9a.dir/feature_tests.cxx.o
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++    -std=c++11 -o CMakeFiles/cmTC_68d9a.dir/feature_tests.cxx.o -c /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_68d9a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68d9a.dir/link.txt --verbose=1
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++       -rdynamic CMakeFiles/cmTC_68d9a.dir/feature_tests.cxx.o  -o cmTC_68d9a 
+make[1]: Leaving directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -527,17 +527,17 @@ make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFile
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp
+Change Dir: /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7b03c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7b03c.dir/build.make CMakeFiles/cmTC_7b03c.dir/build
-make[1]: Entering directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7b03c.dir/feature_tests.cxx.o
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++    -std=c++98 -o CMakeFiles/cmTC_7b03c.dir/feature_tests.cxx.o -c /home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_7b03c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b03c.dir/link.txt --verbose=1
-/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++       -rdynamic CMakeFiles/cmTC_7b03c.dir/feature_tests.cxx.o  -o cmTC_7b03c 
-make[1]: Leaving directory '/home/oliver/MySoftware/arucodetect/pbuild/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_e9a14/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e9a14.dir/build.make CMakeFiles/cmTC_e9a14.dir/build
+make[1]: Entering directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e9a14.dir/feature_tests.cxx.o
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++    -std=c++98 -o CMakeFiles/cmTC_e9a14.dir/feature_tests.cxx.o -c /home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_e9a14
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9a14.dir/link.txt --verbose=1
+/usr/share/jevois-sdk/out/sun8iw5p1/linux/common/buildroot/host/usr/bin/arm-buildroot-linux-gnueabihf-g++       -rdynamic CMakeFiles/cmTC_e9a14.dir/feature_tests.cxx.o  -o cmTC_e9a14 
+make[1]: Leaving directory '/home/jake/Documents/ArUco_Detect/pbuild/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

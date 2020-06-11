@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++17 -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-
 
 CXX_DEFINES = -DArUcoDetect_EXPORTS
 
-CXX_INCLUDES = -I/home/oliver/MySoftware/arucodetect 
+CXX_INCLUDES = -I/home/jake/Documents/ArUco_Detect -I/var/lib/jevois-build/usr/include 
 

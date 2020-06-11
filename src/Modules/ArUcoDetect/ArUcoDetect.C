@@ -289,10 +289,13 @@ class ArUcoDetect : public jevois::StdModule
           navmessage->fps = (float)0;
 
           /* compute the message checksum, which doesn't include the header contents */
-          navmessage->csum = calculateCheckSum((unsigned char *)&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct obDatalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
+	  unsigned char *out = (unsigned char *)navmessage;
+	  navmessage->csum = calculateCheckSum(&out[sizeof(struct datalinkHeader_ref)], navmessage->messageSize - sizeof(struct datalinkHeader_ref));
 
           /* write the data over the config-file-selected serial output */
-          std::string ArUco_string = encodeSerialMsg((unsigned char *)navmessage, navmessage->messageSize);
+          std::string ArUco_string = encodeSerialMsg((unsigned char *)navmessage, navmessage->messageSize + 2*sizeof(char));
+	  unsigned sz = ArUco_string.size();
+	  ArUco_string.resize(sz-2);
           jevois::Module::sendSerial(ArUco_string);
       }
     }
@@ -395,10 +398,13 @@ class ArUcoDetect : public jevois::StdModule
           navmessage->fps = (float)0;
 
           /* compute the message checksum, which doesn't include the header contents */
-          navmessage->csum = calculateCheckSum((unsigned char *)&navmessage[sizeof(struct datalinkHeader_ref)], (int)(sizeof(struct obDatalinkMessageNavIP1_ref) - sizeof(datalinkHeader_ref)));
+	  unsigned char *out = (unsigned char *)navmessage;
+	  navmessage->csum = calculateCheckSum(&out[sizeof(struct datalinkHeader_ref)], navmessage->messageSize - sizeof(struct datalinkHeader_ref));
 
           /* write the data over the config-file-selected serial output */
-          std::string ArUco_string = encodeSerialMsg((unsigned char *)navmessage, navmessage->messageSize);
+          std::string ArUco_string = encodeSerialMsg((unsigned char *)navmessage, navmessage->messageSize + 2*sizeof(char));
+	  unsigned sz = ArUco_string.size();
+	  ArUco_string.resize(sz-2);
           jevois::Module::sendSerial(ArUco_string);
       }
 
